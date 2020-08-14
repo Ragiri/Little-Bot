@@ -1,5 +1,5 @@
 import { Client, GuildMember } from 'discord.js';
-import { prefix, token } from './config.json'
+import { prefix} from './config.json'
 const ytdl = require('ytdl-core');
 var search = require('youtube-search');
 
