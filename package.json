@@ -14,6 +14,7 @@
     "avconv": "^3.1.0",
     "discord.js": "^12.2.0",
     "esm": "^3.2.25",
+    "ffbinaries": "^1.1.4",
     "ffmpeg": "0.0.4",
     "fluent-ffmpeg": "^2.1.2",
     "nodemon": "^2.0.4",
