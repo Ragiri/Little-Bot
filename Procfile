@@ -1,0 +1,1 @@
+Worker: nodemon -r esm index.js

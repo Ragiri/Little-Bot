@@ -1,4 +1,4 @@
-import { Client, GuildMember } from 'discord.js'
+import { Client, GuildMember } from 'discord.js';
 import { prefix, token } from './config.json'
 const ytdl = require('ytdl-core');
 var search = require('youtube-search');
@@ -68,6 +68,8 @@ bot.on('message', async msg => {
     }else if (comp == 'play') {
         async function execute() {
           const args = msg.content.split(" ");
+          if (args.length == 1)
+            return msg.channel.send("You need to add an URL music");
           const voiceChannel = msg.member.voice.channel;
           var InfoSong;
           if (!voiceChannel)
@@ -195,4 +197,4 @@ bot.on('disconnect', () => {
 });
 
 bot.on
-bot.login(token);
+bot.login(process.env.token);
